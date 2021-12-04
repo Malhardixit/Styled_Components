@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElements";
+import { NavBtnLink } from "../Navbar/NavbarElements";
 import {
   InfoContainer,
   InfoWrapper,
@@ -42,8 +43,8 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to="home"
+                  <NavBtnLink
+                    to="/signin"
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -54,7 +55,7 @@ const InfoSection = ({
                     dark2={dark2 ? 1 : 0}
                   >
                     {buttonLabel}
-                  </Button>
+                  </NavBtnLink>
                 </BtnWrap>
               </TextWrapper>
             </Column1>
